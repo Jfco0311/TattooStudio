@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<title>Tattoo Studio - New school</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.mySlides{
+  display: inline-block;
+}
+
+/*Start  button settings*/
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #483C32}
+
+.button:active {
+  background-color: #000000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*End  button settings*/
+</style>
+<body class="w3-black">
+
+
+<!-- Home button -->
+
+<p><a href= ./index.html target=_top><button class="button">Home</button></a></p>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <img src="./img/logo.jpg">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">New school</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <p1>El estilo de los tatuajes de la nueva escuela viene, tan fácil de asumir, desde el estilo mas tradicional de la vieja escuela.
+    Difiere de la anterior especialmente para el uso de los colores: son, de hecho, mas brillante y con una amplia gama de tonos.
+    Las líneas están mas marcadas . Los temas representados son similares a los de la vieja escuela, de los cultivos de la marinería a los más patriotas,temas como corazones,
+    frutos secos, y los motores de pistón, armas y cuchillos.
+  </p1>
+
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Ejemplos:</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+
+
+
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {box-sizing:border-box}
+  body {font-family: Verdana,sans-serif;}
+  .mySlides {display:none}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  </head>
+  <body>
+
+
+  <p>Change image every 2 seconds:</p>
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 16</div>
+    <img src="./img/tattoo-anchor-new_school-mickey_mouse.jpg" style="width:70%">
+    <div class="text">Mickey Mouse</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 16</div>
+    <img src="./img/tattoo-arm-new_school.jpg" style="width:70%">
+    <div class="text">Arm</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 16</div>
+  <img src="./img/tattoo-arm-new_school-crab.jpg" style="width:70%">
+    <div class="text">Crab</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 16</div>
+  <img src="./img/tattoo-arm-new_school-flower-compass.jpg" style="width:70%">
+    <div class="text">Flower Compass</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 16</div>
+  <img src="./img/tattoo-arm-new_school-fox.jpg" style="width:70%">
+    <div class="text">Arm Fox</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 16</div>
+  <img src="./img/tattoo-arm-new_school-owl (1).jpg" style="width:70%">
+    <div class="text">Arm Owl</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 16</div>
+  <img src="./img/tattoo-arm-new_school-owl.jpg" style="width:70%">
+    <div class="text"> Arm Owl</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 16</div>
+  <img src="./img/tattoo-arm-portrait-new_school.jpg" style="width:70%">
+    <div class="text">Arm Portrait</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 16</div>
+  <img src="./img/tattoo-arm-sparrow-new_school.jpg" style="width:70%">
+    <div class="text">sparrow</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 16</div>
+  <img src="./img/tattoo-calf-new_school-owl-clock.jpg" style="width:70%">
+    <div class="text">Owl Clock</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 16</div>
+  <img src="./img/tattoo-hand-new_school-tiger-wolf.jpg" style="width:70%">
+    <div class="text">Hand Tiger/Wolf</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">12 / 16</div>
+  <img src="./img/tattoo-leg-fantasy-new_school.jpg" style="width:70%">
+    <div class="text">Leg-Fantasy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">13 / 16</div>
+  <img src="./img/tattoo-leg-fantasy-new_school.jpg" style="width:70%">
+    <div class="text">Leg-Fantasy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">14 / 16</div>
+  <img src="./img/tattoo-shoulder-new_school-microphone-flower-rose.jpg" style="width:70%">
+    <div class="text">Shoulder Microphone/Flower/Rose</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">15 / 16</div>
+  <img src="./img/tattoo-thigh-new_school-lion.jpg" style="width:70%">
+    <div class="text">Thigh Lion</div>
+  </div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">16 / 16</div>
+  <img src="./img/tattoo-thigh-new_school-octopus.jpg" style="width:70%">
+    <div class="text">ThighOctopus</div>
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 4 seconds
+  }
+  </script>
+
+  </body>
+
+
+  <!-- End photo grid part 1 -->
+
+
+  <head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>More Tatoos</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="./img/tattoo-arm-new-school-fantasy.jpg" style="width:70%">
+  <div class="overlay">
+    <div class="text">New School Arm Fantasy</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./img/tattoo-arm-new-school-lighthouse.jpg" style="width:70%">
+  <div class="overlay">
+    <div class="text">Tatoo Arm lighthouse</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./img/tattoo-arm-new-school-matrioska.jpg" style="width:70%">
+  <div class="overlay">
+    <div class="text">Tatoo Arm matrioska</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./img/tattoo-new_school-cat-owl-fantasy.jpg" style="width:70%">
+  <div class="overlay">
+    <div class="text">Tatoo cat-owl-fantasy</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./img/tattoo-new-school-men.jpg" style="width:70%">
+  <div class="overlay">
+    <div class="text">Arm Men</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./img/tattoo-new-school-plug.jpg" style="width:70%">
+  <div class="overlay">s
+    <div class="text">Tatoo Arm Plug</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./img/tattoo-thigh-head-fantasy.jpg" style="width:70%">
+  <div class="overlay">
+    <div class="text">Tatoo Head Fantasy</div>
+  </div>
+</div>
+</body>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  <!-- Contact Section -->
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
