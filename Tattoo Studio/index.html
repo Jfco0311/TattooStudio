@@ -10,28 +10,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
-     <script>
-     function startTime() {
-         var today = new Date();
-         var h = today.getHours();
-         var m = today.getMinutes();
-         var s = today.getSeconds();
-         m = checkTime(m);
-         s = checkTime(s);
-         document.getElementById('txt').innerHTML =
-         h + ":" + m + ":" + s;
-         var t = setTimeout(startTime, 500);
-     }
-     function checkTime(i) {
-         if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-         return i;
-     }
-     </script>
 
 
 </head>
 
-<body onload="startTime()">
+<body>
   <marquee><h1 style="color:red;">Tattoo Studio</h1></marquee>
 
 
@@ -42,7 +25,6 @@
                  <div class="col-md-12">
                      <div class="navbar-collapse collapse ">
                          <ul id="menu-top" class="nav navbar-nav navbar-right">
-                           <li><a><font color="red"><div id="txt"></div></font></a></li>
                              <li><a href="index.html" class="menu-top-active" >HOME</a></li>
 
                              <li><a href="./tribales.html">TRIBALES</a></li>
