@@ -70,7 +70,7 @@ img {margin-bottom: -7px}
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
   <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
-   <i class="fa fa-instagram w3-hover-text-purple"></i>
+  <i class="fa fa-instagram w3-hover-text-purple"></i>
   <i class="fa fa-snapchat w3-hover-text-yellow"></i>
   <i class="fa fa-pinterest-p w3-hover-text-red"></i>
   <i class="fa fa-twitter w3-hover-text-light-blue"></i>
@@ -100,5 +100,31 @@ function w3_close() {
 }
 </script>
 
+<script>
+	
+    var tiempo1;
+    var tiempo2;
+    var tiempo3;
+    var suma;
+    var promedio;
+
+
+  tiempo1=prompt('Ingrese la primer duración en minutos','');
+  tiempo1=parseInt(tiempo1);
+  tiempo2=prompt('Ingrese la segunda duración en minutos','');
+  tiempo2=parseInt(tiempo2);
+  tiempo3=prompt('Ingrese la tercer duracion en minutos','');
+  tiempo3=parseInt(tiempo3);
+
+  suma=tiempo1+tiempo2+tiempo3;
+  promedio=suma/3;
+
+  document.write('El promedio es: ');
+  document.write(promedio);
+  document.write('<br>');
+
+
+</script>
+    
 </body>
 </html>
