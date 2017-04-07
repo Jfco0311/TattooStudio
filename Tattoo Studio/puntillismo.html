@@ -3,9 +3,15 @@
 <title>Tattoo Studio - Puntillismo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=".\assets\jquery-ui-1.12.1.custom\jquery-ui.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+	<script src=".\assets\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+
+
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -16,7 +22,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+
+<script>
+  $( function() {
+    $( "#resizable" ).resizable();
+  } );
+  </script>
+
 <body class="w3-black">
+
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -60,13 +74,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Puntillismo</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Se trata de una técnica para tatuar relativamente nueva,
+    <div id="resizable"><p>Se trata de una técnica para tatuar relativamente nueva,
       que aún no se ve con demasiada frecuencia, pero que poco a poco se
       va volviendo cada vez más popular y conocida. Esta técnica se basa
       en los diseños realizados con puntos, y está fuertemente emparentada
       con el estilo pictórico del puntillismo, una técnica que surgió a
       finales del siglo XIX en Francia, en manos del pintor Georges Seurat.
-    </p>
+    </p></div>
 
   </div>
 
